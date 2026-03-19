@@ -1,0 +1,21 @@
+/* 调整大屏（>=1200px）下内容布局，让 1920*1080 看起来更舒服 */
+
+@media (min-width: 1200px) {
+  /* 文档内容区域稍微放宽一点，但不铺满整屏 */
+  .VPDoc .container,
+  .VPHome .container {
+    max-width: 1200px;
+  }
+
+  /* 主内容区域居中 */
+  .VPDoc .container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* 首页卡片区域不要太窄 */
+  .VPHome .VPHomeFeatures .container {
+    max-width: 1200px;
+  }
+}
+

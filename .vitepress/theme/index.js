@@ -4,6 +4,7 @@ import NavLinkWithIcon from './components/NavLinkWithIcon.vue'
 import './sidebar-divider.css'
 import './sidebar-collapse.css'
 import './home-hero-bg.css'
+import './layout-responsive.css'
 
 export default {
   extends: DefaultTheme,
