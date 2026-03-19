@@ -1,0 +1,98 @@
+/* 首页 Hero 背景：柔和渐变 + 轻微纹理 */
+.VPHome .VPHero {
+  position: relative;
+  /* 允许底部渐变过渡层溢出到下方 */
+  overflow: visible;
+}
+
+.VPHome .VPHero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  background:
+    radial-gradient(900px 420px at 18% 18%, rgba(72, 118, 255, 0.14), transparent 60%),
+    radial-gradient(720px 360px at 82% 24%, rgba(0, 193, 255, 0.10), transparent 55%),
+    radial-gradient(820px 420px at 58% 92%, rgba(99, 102, 241, 0.10), transparent 60%),
+    linear-gradient(
+      180deg,
+      rgba(246, 247, 249, 0.92) 0%,
+      rgba(255, 255, 255, 0.88) 70%,
+      rgba(255, 255, 255, 0.92) 100%
+    );
+}
+
+/* Hero 底部做“渐隐过渡”，避免背景与下方白底割裂 */
+.VPHome .VPHero::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  /* 让过渡更“长”，覆盖到卡片区域上方 */
+  bottom: -140px;
+  height: 280px;
+  pointer-events: none;
+  z-index: 0;
+  /* 轻微模糊，避免色带/硬边 */
+  filter: blur(16px);
+  transform: translateZ(0);
+  background:
+    radial-gradient(1000px 220px at 50% 10%, rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.65) 70%, rgba(255, 255, 255, 1) 100%),
+    linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.18) 30%,
+      rgba(255, 255, 255, 0.55) 70%,
+      rgba(255, 255, 255, 1) 100%
+    );
+}
+
+.dark .VPHome .VPHero::before {
+  background:
+    radial-gradient(900px 420px at 18% 18%, rgba(72, 118, 255, 0.18), transparent 60%),
+    radial-gradient(720px 360px at 82% 24%, rgba(0, 193, 255, 0.14), transparent 55%),
+    radial-gradient(820px 420px at 58% 92%, rgba(99, 102, 241, 0.14), transparent 60%),
+    linear-gradient(
+      180deg,
+      rgba(18, 18, 22, 0.92) 0%,
+      rgba(18, 18, 22, 0.88) 70%,
+      rgba(18, 18, 22, 0.92) 100%
+    );
+}
+
+.dark .VPHome .VPHero::after {
+  background:
+    radial-gradient(1000px 220px at 50% 10%, rgba(18, 18, 22, 0.0), rgba(18, 18, 22, 0.65) 70%, rgba(18, 18, 22, 1) 100%),
+    linear-gradient(
+      180deg,
+      rgba(18, 18, 22, 0) 0%,
+      rgba(18, 18, 22, 0.18) 30%,
+      rgba(18, 18, 22, 0.55) 70%,
+      rgba(18, 18, 22, 1) 100%
+    );
+}
+
+/* 确保内容在背景之上 */
+.VPHome .VPHero .container {
+  position: relative;
+  z-index: 1;
+}
+
+/* 上半部分（Hero）与下半部分（Features）间距 */
+.VPHome .VPHomeFeatures {
+  margin-top: 44px;
+}
+
+@media (min-width: 640px) {
+  .VPHome .VPHomeFeatures {
+    margin-top: 64px;
+  }
+}
+
+@media (min-width: 960px) {
+  .VPHome .VPHomeFeatures {
+    margin-top: 88px;
+  }
+}
+

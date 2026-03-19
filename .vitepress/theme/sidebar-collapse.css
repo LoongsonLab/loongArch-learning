@@ -1,0 +1,70 @@
+/* 侧栏收起状态：仅在大屏生效 */
+@media (min-width: 960px) {
+  .Layout.sidebar-collapsed .VPSidebar {
+    width: 0 !important;
+    min-width: 0 !important;
+    padding: 0 !important;
+    overflow: hidden !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+  }
+
+  .Layout.sidebar-collapsed .VPContent.has-sidebar {
+    padding-left: 0 !important;
+  }
+
+  .Layout.sidebar-collapsed .VPNavBar.has-sidebar .wrapper,
+  .Layout.sidebar-collapsed .VPNavBar.has-sidebar .container {
+    padding-left: 0 !important;
+  }
+
+  .Layout.sidebar-collapsed .VPNavBar.has-sidebar .title {
+    width: 0 !important;
+    min-width: 0 !important;
+    padding-left: 0 !important;
+    overflow: hidden !important;
+    visibility: hidden !important;
+  }
+
+  .Layout.sidebar-collapsed .VPNavBar.has-sidebar .content {
+    padding-left: 0 !important;
+  }
+
+  .Layout.sidebar-collapsed .VPNavBar.has-sidebar .divider {
+    padding-left: 0 !important;
+  }
+
+  .Layout.sidebar-collapsed .VPLocalNav.has-sidebar {
+    padding-left: 0 !important;
+  }
+
+  .Layout.sidebar-collapsed .VPLocalNav.has-sidebar .container {
+    padding-left: 32px !important;
+  }
+
+  .Layout.sidebar-collapsed .VPFooter.has-sidebar {
+    padding-left: 0 !important;
+  }
+}
+
+@media (min-width: 1440px) {
+  .Layout.sidebar-collapsed .VPContent.has-sidebar {
+    padding-left: calc((100vw - var(--vp-layout-max-width)) / 2) !important;
+  }
+
+  .Layout.sidebar-collapsed .VPNavBar.has-sidebar .content {
+    padding-left: calc((100vw - var(--vp-layout-max-width)) / 2) !important;
+  }
+
+  .Layout.sidebar-collapsed .VPNavBar.has-sidebar .divider {
+    padding-left: calc((100vw - var(--vp-layout-max-width)) / 2) !important;
+  }
+
+  .Layout.sidebar-collapsed .VPLocalNav.has-sidebar {
+    padding-left: calc((100vw - var(--vp-layout-max-width)) / 2) !important;
+  }
+
+  .Layout.sidebar-collapsed .VPFooter.has-sidebar {
+    padding-left: calc((100vw - var(--vp-layout-max-width)) / 2) !important;
+  }
+}

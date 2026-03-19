@@ -1,0 +1,11 @@
+/* 左侧菜单：每个大块之间 1px 分隔线；第 4 项（竞赛资源）单独补线，保证与 LA相关文档 之间有线 */
+.VPSidebar .nav .group + .group,
+.VPSidebar #VPSidebarNav .group + .group {
+  border-top: 1px solid var(--vp-c-divider);
+  padding-top: 10px;
+}
+.VPSidebar .nav .group:nth-child(4),
+.VPSidebar #VPSidebarNav .group:nth-child(4) {
+  border-top: 1px solid var(--vp-c-divider);
+  padding-top: 10px;
+}
