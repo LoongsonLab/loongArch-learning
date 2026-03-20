@@ -2,7 +2,8 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  base: '/loongArch-learning/',
+  // 须与 GitHub 仓库名在 Pages URL 中的路径完全一致（大小写敏感，错则 CSS/JS 全部 404）
+  base: '/loongarch-learning/',
   title: '龙芯实验室',
   description: '龙芯实验室介绍',
   themeConfig: {
