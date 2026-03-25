@@ -5,7 +5,7 @@ outline: deep
 
 # LoongArch64指令C语言模拟实现
 
-- **LA_EMU模拟器**
+## **LA_EMU模拟器**
 
   LoongArch64模拟器，支持整型，浮点，向量指令集。能够启动Linux。
 
