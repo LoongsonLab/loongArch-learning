@@ -112,7 +112,7 @@ outline: deep
 
 ## **LoongArch开发版**
 
-涉及[常用的开发版相关资料](/platform)
+涉及常用的开发版相关资料
 
   - [2k1000LA星云版](/platform/2k1000la)
 
