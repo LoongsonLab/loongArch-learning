@@ -1,5 +1,5 @@
 ---
-title: 龙架构相关仓库
+title: 龙芯实验室开源仓库
 outline: deep
 ---
 
