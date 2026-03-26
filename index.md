@@ -115,7 +115,7 @@ outline: deep
 
 涉及常用的开发版相关资料
 
-  - [2k1000LA星云版](/platform/2k1000la)
+  - [2k1000LA星云板](/platform/2k1000la)
 
   - [2k0300蜂鸟](/platform/2k0300)
 
