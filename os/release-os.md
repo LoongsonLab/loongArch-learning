@@ -3,7 +3,7 @@ title: LoongArch支持的发行版操作系统
 outline: deep
 ---
 
-# LoongArch支持的发行版操作系统[^ref_release_os]
+# LoongArch支持的发行版操作系统[^1]
 
 **按照首字母大小排列**
 
@@ -319,4 +319,4 @@ outline: deep
 
 -----
 
-[^ref_release_os]: https://loongfans.cn/os
+[^1]: https://loongfans.cn/os
