@@ -1,0 +1,124 @@
+/* 往年龙芯赛题：折叠内排版 */
+.past-loongson-topics-page {
+  margin-top: 0.75rem;
+}
+
+.past-loongson-topics-page > details {
+  margin: 0.1rem 0;
+  border-radius: 8px;
+  padding: 0 12px 0;
+  background: var(--vp-c-bg);
+}
+
+.past-loongson-topics-page > details[open] {
+  border: 1px solid var(--vp-c-divider);
+  padding-bottom: 12px;
+}
+
+.vp-doc .past-loongson-topics-page > details > summary {
+  position: relative;
+  margin: 0 -12px;
+  padding: 8px 12px 8px 30px; /* 12px 基础 + 18px 箭头 */
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  cursor: pointer;
+  border-radius: 8px 8px 0 0;
+  list-style: none;
+}
+
+.vp-doc .past-loongson-topics-page > details > summary::-webkit-details-marker {
+  display: none;
+}
+
+.vp-doc .past-loongson-topics-page > details > summary::marker {
+  content: '';
+}
+
+.vp-doc .past-loongson-topics-page > details > summary::before {
+  content: '›';
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+  line-height: 1;
+  color: var(--vp-c-text-2);
+  transition: transform 0.15s ease, color 0.15s ease;
+  transform-origin: 50% 50%;
+}
+
+.vp-doc .past-loongson-topics-page > details[open] > summary::before {
+  transform: translateY(-50%) rotate(90deg);
+  color: var(--vp-c-brand-1);
+}
+
+.past-loongson-topics-page > details[open] > summary {
+  border-bottom: 1px solid var(--vp-c-divider);
+  margin-bottom: 12px;
+  background: var(--vp-c-bg-soft);
+}
+
+/* 赛题仓库一行 */
+/* .past-loongson-topics-page .past-topic-repo {
+  margin: 0 0 12px;
+  padding: 8px 12px;
+  font-size: 0.9375rem;
+  line-height: 1.5;
+  background: var(--vp-c-bg-soft);
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 6px;
+  color: var(--vp-c-text-2);
+} */
+
+.past-loongson-topics-page .past-topic-repo a {
+  font-weight: 500;
+}
+
+/* 段首简介 */
+.past-loongson-topics-page .past-topic-intro {
+  margin: 0 0 14px;
+  line-height: 1.65;
+  color: var(--vp-c-text-1);
+}
+
+/* 小节标题（特点 / 涉及知识 …） */
+.past-loongson-topics-page .past-topic-h {
+  margin: 14px 0 6px;
+  padding: 0 0 0 10px;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  color: var(--vp-c-text-2);
+  text-transform: none;
+  border-left: 3px solid var(--vp-c-brand-1);
+  line-height: 1.4;
+}
+
+.past-loongson-topics-page .past-topic-repo + .past-topic-h {
+  margin-top: 10px;
+}
+
+.past-loongson-topics-page .past-topic-intro + .past-topic-h {
+  margin-top: 12px;
+}
+
+/* 紧跟小标题的列表 */
+.past-loongson-topics-page details ul {
+  margin: 0 0 4px;
+  padding-left: 1.2rem;
+}
+
+.past-loongson-topics-page details li {
+  margin: 0.2rem 0;
+  line-height: 1.6;
+  color: var(--vp-c-text-1);
+}
+
+.past-loongson-topics-page details li + li {
+  margin-top: 0.15rem;
+}
+
+.dark .past-loongson-topics-page > details[open] > summary {
+  background: var(--vp-c-bg-soft);
+}

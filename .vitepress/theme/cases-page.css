@@ -1,0 +1,117 @@
+/* 竞赛优秀作品页：目录风折叠 + 紧凑表格 */
+.cases-page {
+  margin-top: 0.75rem;
+}
+
+.cases-page details {
+  margin: 0.2rem 0;
+  border: 0;
+  border-bottom: 1px solid var(--vp-c-divider);
+  padding: 0;
+  background: transparent;
+}
+
+.cases-page details:last-of-type {
+  border-bottom: 0;
+}
+
+/* 统一所有 summary 的 marker 样式（不同浏览器默认三角不一致） */
+.vp-doc .cases-page summary::-webkit-details-marker {
+  display: none !important;
+}
+
+.vp-doc .cases-page summary::marker {
+  content: '' !important;
+}
+
+.vp-doc .cases-page details > summary {
+  position: relative;
+  margin: 0;
+  padding: 10px 0 10px 18px; /* 给自定义箭头留位置 */
+  font-size: 0.975rem;
+  font-weight: 400;
+  line-height: 1.55;
+  cursor: pointer;
+  list-style: none !important;
+  display: block;
+}
+
+.vp-doc .cases-page details > summary::before {
+  content: '›';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+  line-height: 1;
+  color: var(--vp-c-text-2);
+  transition: transform 0.15s ease, color 0.15s ease;
+  transform-origin: 50% 50%;
+}
+
+.vp-doc .cases-page details[open] > summary::before {
+  transform: translateY(-50%) rotate(90deg);
+  color: var(--vp-c-brand-1);
+}
+
+/* 展开内容略缩进 */
+.cases-page details > :not(summary) {
+  margin-left: 0.4rem;
+}
+
+/* 顶部分隔线：细且贴合内容区 */
+.vp-doc .cases-divider {
+  border: 0;
+  border-top: 1px solid var(--vp-c-divider);
+  margin: 12px 0 6px;
+}
+
+/* 表格紧凑 */
+.cases-page table {
+  margin: 6px 0 10px;
+  font-size: 0.9375rem;
+  width: 100%;
+  max-width: 100%;
+}
+
+.cases-page th,
+.cases-page td {
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+
+.cases-page th {
+  white-space: nowrap;
+}
+
+/* 无需展开的“标题 + 直接展示列表” */
+.cases-section {
+  margin: 0.35rem 0 0.8rem;
+}
+
+.cases-section-title {
+  margin: 0.2rem 0 0.35rem;
+  font-size: 1.08rem;
+  font-weight: 600;
+  color: var(--vp-c-text-1);
+  line-height: 1.6;
+}
+
+.cases-inline-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.cases-inline-list li {
+  line-height: 1.6;
+  color: var(--vp-c-text-1);
+}
+
+.cases-inline-list a {
+  font-weight: 500;
+}
+

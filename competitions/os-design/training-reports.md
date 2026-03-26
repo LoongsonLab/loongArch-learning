@@ -4,6 +4,7 @@ outline: [2, 4]
 ---
 
 # 历年培训报告
+本栏目收录历届操作系统大赛的官方培训资料。
 <div class="training-reports-page">
 
 ## 2025 年

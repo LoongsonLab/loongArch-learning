@@ -1,18 +1,89 @@
-/* 仅对历年培训报告页进行折叠块间距压缩 */
+/* 历年培训报告页：干净目录风 + 紧凑表格 */
 .training-reports-page {
+  margin-top: 0.75rem;
 }
 
 .training-reports-page details {
-  margin-top: 0.25rem;
-  margin-bottom: 0.25rem;
-}
-
-.training-reports-page details + details {
-  margin-top: 0.1rem;
-}
-
-.training-reports-page details > summary {
-  margin: 0;
+  margin: 0.2rem 0;
+  border: 0;
+  border-bottom: 1px solid var(--vp-c-divider);
   padding: 0;
+  background: transparent;
+}
+
+.training-reports-page details:last-child {
+  border-bottom: 0;
+}
+
+.vp-doc .training-reports-page details > summary {
+  position: relative;
+  margin: 0;
+  padding: 10px 0 10px 18px; /* 给自定义箭头留位置 */
+  font-size: 0.975rem;
+  font-weight: 400;
+  line-height: 1.55;
+  cursor: pointer;
+  list-style: none;
+}
+
+/* 隐藏默认小三角（不同浏览器实现不同） */
+.vp-doc .training-reports-page details > summary::-webkit-details-marker {
+  display: none;
+}
+
+.vp-doc .training-reports-page details > summary::marker {
+  content: '';
+}
+
+/* 自定义细箭头 */
+.vp-doc .training-reports-page details > summary::before {
+  content: '›';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+  line-height: 1;
+  color: var(--vp-c-text-2);
+  transition: transform 0.15s ease, color 0.15s ease;
+  transform-origin: 50% 50%;
+}
+
+.vp-doc .training-reports-page details[open] > summary::before {
+  transform: translateY(-50%) rotate(90deg);
+  color: var(--vp-c-brand-1);
+}
+
+.training-reports-page details[open] > summary {
+  margin-bottom: 8px;
+}
+
+/* 回放链接/列表：压缩上下空隙 */
+.training-reports-page details > ul,
+.training-reports-page details > ol {
+  margin: 6px 0 8px;
+}
+
+/* 详情内容缩进一点，层级更清楚 */
+.training-reports-page details > :not(summary) {
+  margin-left: 0.4rem;
+}
+
+/* 表格更紧凑 */
+.training-reports-page details table {
+  margin: 6px 0 10px;
+  font-size: 0.9375rem;
+  width: 100%;
+  max-width: 100%;
+}
+
+.training-reports-page details th,
+.training-reports-page details td {
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+
+.training-reports-page details th {
+  white-space: nowrap;
 }
 

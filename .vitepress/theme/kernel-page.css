@@ -1,0 +1,77 @@
+/* OS Kernel：目录风（和培训报告一致），不做卡片外框 */
+.kernel-projects-page {
+  margin-top: 0.75rem;
+}
+
+.kernel-projects-page > details {
+  margin: 0.2rem 0;
+  border: 0;
+  border-bottom: 1px solid var(--vp-c-divider);
+  padding: 0;
+  background: transparent;
+}
+
+.kernel-projects-page > details:last-child {
+  border-bottom: 0;
+}
+
+/* 年份标题行：常规字重、紧凑间距 */
+.vp-doc .kernel-projects-page > details > summary {
+  position: relative;
+  margin: 0;
+  padding: 10px 0 10px 18px; /* 给自定义箭头留位置 */
+  font-size: 0.975rem;
+  font-weight: 400;
+  line-height: 1.55;
+  cursor: pointer;
+  list-style: none;
+}
+
+.vp-doc .kernel-projects-page > details > summary::-webkit-details-marker {
+  display: none;
+}
+
+.vp-doc .kernel-projects-page > details > summary::marker {
+  content: '';
+}
+
+.vp-doc .kernel-projects-page > details > summary::before {
+  content: '›';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+  line-height: 1;
+  color: var(--vp-c-text-2);
+  transition: transform 0.15s ease, color 0.15s ease;
+  transform-origin: 50% 50%;
+}
+
+.vp-doc .kernel-projects-page > details[open] > summary::before {
+  transform: translateY(-50%) rotate(90deg);
+  color: var(--vp-c-brand-1);
+}
+
+/* 展开内容略缩进，让层级更清晰 */
+.kernel-projects-page > details > :not(summary) {
+  margin-left: 0.4rem;
+}
+
+/* 表格紧凑些 */
+.kernel-projects-page table {
+  margin: 6px 0 10px;
+  font-size: 0.9375rem;
+  width: 100%;
+  max-width: 100%;
+}
+
+.kernel-projects-page th,
+.kernel-projects-page td {
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+
+.kernel-projects-page th {
+  white-space: nowrap;
+}

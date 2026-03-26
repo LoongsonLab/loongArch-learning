@@ -51,6 +51,7 @@ export default defineConfig({
               { text: '往年的比赛的OS Kernel', link: '/competitions/os-design/kernel/' },
               { text: '往年比赛的优秀作品', link: '/competitions/os-design/cases/' },
               { text: '往年比赛的报告', link: '/competitions/os-design/training-reports/' },
+              { text: '往年龙芯赛题', link: '/competitions/os-design/past-loongson-topics/' },
               { text: '往年问题的FAQ', link: '/competitions/os-design/faq/' },
             ],
           },
