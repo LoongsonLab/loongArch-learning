@@ -416,8 +416,6 @@ cd rustc-1.93.0-src
 
 ```
 
-
-
 # LoongArch QEMU
 
 ## QEMU编译安装
@@ -436,6 +434,20 @@ cd build
 
 ninja
 ```
+
+------
+
+注意：上述的编译都是按照LoongArch64架构来处理的。
+
+
+# LoongArch32R 相关工具链
+
+GCC 版本： 16.0.0
+GDB 版本： 17.0.5
+
+x86_64 host: Ubuntu 24.02
+
+下载地址在[这里](https://github.com/LoongsonLab/cross-build-tools/releases/tag/loongarch32r-unknown-linux-gnusf-gcc-16.0.0-ubuntu24.04)
 
 
 # 工具列表汇总
