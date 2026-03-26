@@ -5,6 +5,7 @@ import './sidebar-divider.css'
 import './sidebar-collapse.css'
 import './home-hero-bg.css'
 import './layout-responsive.css'
+import './training-reports.css'
 
 export default {
   extends: DefaultTheme,

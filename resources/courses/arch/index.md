@@ -28,28 +28,6 @@ outline: deep
       </td>
       <td>从体系结构整体出发系统讲解 10 讲，配合教材第三版使用。</td>
     </tr>
-    <tr>
-      <td class="title">计算机体系结构六讲</td>
-      <td class="teacher">
-        胡伟武<br />
-        中国科学院大学
-      </td>
-      <td class="link">
-        <a href="https://space.bilibili.com/1339327684/lists/2279890?type=season" target="_blank">点击观看</a>
-      </td>
-      <td>精简版课程，适合短学时或快速建立体系结构整体认识。</td>
-    </tr>
-    <tr>
-      <td class="title">龙架构体系结构实验课</td>
-      <td class="teacher">
-        汪文祥<br />
-        龙芯中科技术股份有限公司
-      </td>
-      <td class="link">
-        <a href="https://www.bilibili.com/video/BV1SK421t7JS" target="_blank">点击观看</a>
-      </td>
-      <td>结合 LoongArch 实验环境，强调动手实现与性能分析。</td>
-    </tr>
   </tbody>
 </table>
 

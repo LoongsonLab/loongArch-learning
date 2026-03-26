@@ -1,0 +1,18 @@
+/* 仅对历年培训报告页进行折叠块间距压缩 */
+.training-reports-page {
+}
+
+.training-reports-page details {
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
+.training-reports-page details + details {
+  margin-top: 0.1rem;
+}
+
+.training-reports-page details > summary {
+  margin: 0;
+  padding: 0;
+}
+
