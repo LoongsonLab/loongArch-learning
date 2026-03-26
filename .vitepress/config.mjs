@@ -31,7 +31,7 @@ export default defineConfig({
     sidebar: [
       {
         text: '教学资源',
-        collapsed: true,
+        collapsed: false,
         items: [
           { text: '计算机系统', link: '/resources/courses/intro/' },
           { text: '计算机组成原理/体系结构', link: '/resources/courses/arch/' },
@@ -42,11 +42,11 @@ export default defineConfig({
       
       {
         text: '竞赛资源',
-        collapsed: true,
+        collapsed: false,
         items: [
           {
             text: '操作系统设计赛',
-            collapsed: true,
+            collapsed: false,
             items: [
               { text: '往年的比赛的OS Kernel', link: '/competitions/os-design/kernel/' },
               { text: '往年比赛的优秀作品', link: '/competitions/os-design/cases/' },
@@ -61,7 +61,7 @@ export default defineConfig({
       
       {
         text: '龙架构相关文档',
-        collapsed: true,
+        collapsed: false,
         items: [
           { text: '官方参考手册', link: '/docs-la/' },
           { text: '其他参考手册', link: '/docs-la/others-ref' },
@@ -72,7 +72,7 @@ export default defineConfig({
       
       {
         text: '龙架构工具链',
-        collapsed: true,
+        collapsed: false,
         items: [
           { text: '常用工具链', link: '/toolchain/compiler' },
           { text: 'libc库', link: '/toolchain/libc' },
@@ -84,7 +84,7 @@ export default defineConfig({
       
       {
         text: '龙架构开发平台',
-        collapsed: true,
+        collapsed: false,
         items: [
           { text: '2k1000LA星云版', link: '/platform/2k1000la' },
           { text: '2k0300蜂鸟', link: '/platform/2k0300' },
@@ -94,7 +94,7 @@ export default defineConfig({
       
       {
         text: '龙架构操作系统',
-        collapsed: true,
+        collapsed: false,
         items: [
           { text: '支持龙架构的发行版', link: '/os/release-os' },
           { text: 'LoongArch开源Kernel', link: '/os/os-kernel' },
@@ -104,7 +104,7 @@ export default defineConfig({
       
       {
         text: '龙架构相关的仓库',
-        collapsed: true,
+        collapsed: false,
         items: [
           { text: '龙芯实验室', link: '/repos/loongsonlab' },
           { text: '龙芯开源社区', link: '/repos/loongson-community' },
@@ -113,7 +113,7 @@ export default defineConfig({
 
       {
         text: '其他杂项',
-        collapsed: true,
+        collapsed: false,
         items: [
           { text: '龙架构相关的论坛', link: '/misc/loong64-form' },
           { text: '开发者相关', link: '/misc/developer' },
@@ -123,7 +123,7 @@ export default defineConfig({
 
       {
         text: '问题反馈',
-        collapsed: true,
+        collapsed: false,
         items: [
           { text: '如何提问', link: '/feedback/' },
           { text: '实习机会', link: '/feedback/works' },
