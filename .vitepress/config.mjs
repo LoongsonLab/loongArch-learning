@@ -44,7 +44,16 @@ export default defineConfig({
         text: '竞赛资源',
         collapsed: true,
         items: [
-          { text: '操作系统设计赛', link: '/competitions/os-design/' },
+          {
+            text: '操作系统设计赛',
+            collapsed: true,
+            items: [
+              { text: '往年的比赛的OS Kernel', link: '/competitions/os-design/kernel/' },
+              { text: '往年比赛的优秀作品', link: '/competitions/os-design/cases/' },
+              { text: '往年比赛的报告', link: '/competitions/os-design/training-reports/' },
+              { text: '往年问题的FAQ', link: '/competitions/os-design/faq/' },
+            ],
+          },
           { text: '编译系统设计赛', link: '/competitions/compiler-design/' },
         ],
       },
