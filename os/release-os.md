@@ -3,7 +3,7 @@ title: LoongArch支持的发行版操作系统
 outline: deep
 ---
 
-# LoongArch支持的发行版操作系统
+# LoongArch支持的发行版操作系统[^ref_release_os]
 
 **按照首字母大小排列**
 
@@ -318,3 +318,5 @@ outline: deep
 这里可以查看[具体信息和下载镜像](https://github.com/sunhaiyong1978/Yongbao)
 
 -----
+
+[^ref_release_os]: https://loongfans.cn/os
