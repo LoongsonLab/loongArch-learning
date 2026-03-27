@@ -26,3 +26,9 @@ outline: deep
 - 社区资源。包含有交流论坛、技术分享等内容。
 
 社区网址链接：https://loongfans.cn/
+
+# 龙芯应用合作社
+
+龙芯应用合作社，提供龙架构下适配的系统软件，方便下载、安装和使用。
+
+网址链接：https://app.loongapps.cn/home
