@@ -12,6 +12,7 @@ outline: deep
 <details>
 <summary>2025年</summary>
 
+内核实现赛道的部分测试用例：[点击跳转](https://github.com/oscomp/testsuits-for-oskernel)
 
 | 队伍名称 | 学校 | 源码仓库地址 |
 | --- | --- | --- |

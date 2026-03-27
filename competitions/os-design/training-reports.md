@@ -7,6 +7,22 @@ outline: [2, 4]
 本栏目收录历届操作系统大赛的官方培训资料。
 <div class="training-reports-page">
 
+## 2026 年
+<details>
+<summary>第一场技术培训会</summary>
+
+ 直播回放链接：[点击跳转](https://live.eyunbo.cn/live/256008?uin=1729)
+
+| 题目 | 讲者 | 报告文件 |
+| --- | --- | --- |
+| 2026年操作系统大赛国赛章程和技术方案解读 | 夏文 | [下载](https://pan.educg.net/s/Y5v3ir) |
+| 2026年操作系统大赛国赛功能赛题新变化介绍 | 张羽 | [下载](https://pan.educg.net/s/0kR3TK) |
+| 2026操作系统大赛国赛内核赛道测例、测评方案说明 | 王雷 | [下载](https://pan.educg.net/s/9WPohm) |
+| 操作系统设计赛技术平台参赛报名、提交等事项操作指引 | 无 |
+
+</details>
+
+
 ## 2025 年
 
 <details>
