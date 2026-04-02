@@ -11,4 +11,3 @@ outline: deep
 
 - [常用的 LA 工具链](/toolchain/)
 - [LA 相关 IP](/practice/ip)
-- [LA 开源 OS](/practice/os)
