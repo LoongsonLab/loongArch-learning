@@ -1,5 +1,5 @@
 ---
-title: 其他扩展阅读
+title: 其他趣闻
 outline: deep
 ---
 
