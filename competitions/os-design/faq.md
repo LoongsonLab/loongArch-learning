@@ -1,15 +1,61 @@
 ---
 title: FAQ
-outline: [2, 4]
+outline: deep
 ---
 
-# FAQ
+# 往年问题的 FAQ
+
+本栏根据队伍回访与问卷调查，汇总参赛各队在赛事实践中遇到的实际问题。
+
+<div class="faq-by-year">
+
+<details>
+<summary>2025 年</summary>
+
+<div class="past-loongson-topics-page">
 
 
-全国大学生计算机系统能力大赛中常见问题:[点击跳转](https://os.xtnl.org.cn/#/oldDetail?name=2025%E5%B9%B4%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E8%83%BD%E5%8A%9B%E5%A4%A7%E8%B5%9B-%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1%E8%B5%9B%28%E5%85%A8%E5%9B%BD%29-OS%E5%8A%9F%E8%83%BD%E6%8C%91%E6%88%98%E8%B5%9B%E9%81%93)
+<div class="faq-q-block faq-q-block--with-body">
+<p class="faq-q-link-line"><strong>问题 1：LSX / LASX 指令说明</strong>：<a id="faq-2025-q1" href="https://chipsandcheese.com/p/loongsons-lsx-and-lasx-vector-extensions" target="_blank" rel="noopener noreferrer">点击查阅说明</a></p>
+<ul class="faq-q-body-list">
+<li>LSX 提供名为 VR0–VR31 的 128 位向量寄存器；LASX 提供名为 XR0–XR31 的 256 位向量寄存器。在后端执行时，寄存器可被重命名到浮点寄存器堆中。</li>
+<li>LSX 与 LASX 提供多种向量处理指令，包括向量加法、乘法、逻辑运算等；支持浮点元素（FP32 / FP64）或整数元素（8 / 16 / 32 / 64 位），并提供 128 位与 256 位的 load / store 指令。</li>
+<li>除算术指令外，LASX 还包括置换、最小/最大值、绝对值，以及加载并广播（如 XVLDREPL）等指令。</li>
+</ul>
+</div>
 
-操作系统内核赛提交指南：[点击跳转](https://gitlab.eduxiji.net/csc1/csc-os/OS-2024/-/blob/main/2024%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%86%85%E6%A0%B8%E8%B5%9B%E6%8A%A5%E5%90%8D%E5%8F%8A%E6%8F%90%E4%BA%A4%E6%8C%87%E5%8D%97.pdf)
+<div class="faq-q-block faq-q-block--linkonly">
+<p class="faq-q-link-line"><strong>问题 2：TLB 相关指令</strong>：<a id="faq-2025-q2" href="https://os-kernel-with-loong64-doc.readthedocs.io/en/latest/context/privilege_isa/tlb_insn.html#id1" target="_blank" rel="noopener noreferrer">点击查阅说明</a></p>
+</div>
 
-2026年全国大学生计算机系统能力大赛操作系统设计赛全国赛-章程:[点击跳转](https://gitlab.eduxiji.net/csc1/csc-os/os2026/-/blob/main/2026%E5%B9%B4%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E8%83%BD%E5%8A%9B%E5%A4%A7%E8%B5%9B%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1%E8%B5%9B%E5%85%A8%E5%9B%BD%E8%B5%9B-%E7%AB%A0%E7%A8%8B.pdf)
+<div class="faq-q-block faq-q-block--linkonly">
+<p class="faq-q-link-line"><strong>问题 3：页表遍历相关指令</strong>：<a id="faq-2025-q3" href="https://os-kernel-with-loong64-doc.readthedocs.io/en/latest/context/privilege_isa/tlb_insn.html#id1" target="_blank" rel="noopener noreferrer">点击查阅说明</a></p>
+</div>
 
-2026年全国大学生计算机系统能力大赛操作系统设计赛全国赛-技术方案:[点击跳转](https://gitlab.eduxiji.net/csc1/csc-os/os2026/-/blob/main/2026%E5%B9%B4%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E8%83%BD%E5%8A%9B%E5%A4%A7%E8%B5%9B%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1%E8%B5%9B%E5%85%A8%E5%9B%BD%E8%B5%9B-%E6%8A%80%E6%9C%AF%E6%96%B9%E6%A1%88.pdf)
+<div class="faq-q-block faq-q-block--linkonly">
+<p class="faq-q-link-line"><strong>问题 4：DMW 映射窗口问题</strong>：<a id="faq-2025-q4" href="https://os-kernel-with-loong64-doc.readthedocs.io/en/latest/context/mmu/dmw.html" target="_blank" rel="noopener noreferrer">点击查阅说明</a></p>
+</div>
+
+<div class="faq-q-block faq-q-block--linkonly">
+<p class="faq-q-link-line"><strong>问题 5：页表遍历与页表项相关</strong>：<a id="faq-2025-q5" href="https://os-kernel-with-loong64-doc.readthedocs.io/en/latest/context/mmu/tlb_struct.html" target="_blank" rel="noopener noreferrer">点击查阅说明</a></p>
+</div>
+
+<div class="faq-q-block faq-q-block--linkonly">
+<p class="faq-q-link-line"><strong>问题 6：2K1000 开发板上非对齐访问的处理方式</strong>：<a id="faq-2025-q6" href="https://os-kernel-with-loong64-doc.readthedocs.io/en/latest/context/trap/trap_in_kernel.html#id11" target="_blank" rel="noopener noreferrer">点击查阅说明</a></p>
+</div>
+
+<div class="faq-q-block faq-q-block--linkonly">
+<p class="faq-q-link-line"><strong>问题 7：平台模块与设备驱动</strong>：<a id="faq-2025-q7" href="https://os-kernel-with-loong64-doc.readthedocs.io/en/latest/context/platform/2k1000la.html#" target="_blank" rel="noopener noreferrer">点击查阅说明</a></p>
+</div>
+
+<div class="faq-q-block faq-q-block--linkonly">
+<p class="faq-q-link-line"><strong>问题 8：仿真与调试</strong>：<a id="faq-2025-q8" href="https://os-kernel-with-loong64-doc.readthedocs.io/en/latest/context/debug/index.html" target="_blank" rel="noopener noreferrer">点击查阅说明</a></p>
+</div>
+
+</div>
+
+</details>
+
+
+
+</div>

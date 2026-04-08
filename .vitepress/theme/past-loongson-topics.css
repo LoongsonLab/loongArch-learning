@@ -1,21 +1,97 @@
-/* 往年龙芯赛题：折叠内排版 */
+/* 往年龙芯赛题、FAQ 按年份：折叠内排版 */
 .past-loongson-topics-page {
   margin-top: 0.75rem;
 }
 
-.past-loongson-topics-page > details {
+/* FAQ 页最外层按年份折叠，样式与赛题 details 一致 */
+.faq-by-year {
+  margin-top: 0.75rem;
+}
+
+/* 年份块内的赛题样式容器不再重复顶距 */
+.faq-by-year .past-loongson-topics-page {
+  margin-top: 0;
+}
+
+/* FAQ：问题块（无 details，直接展示） */
+.faq-by-year .faq-q-block {
+  margin: 1.15rem 0 1.35rem;
+  padding-bottom: 1.1rem;
+  border-bottom: 1px solid var(--vp-c-divider);
+}
+
+.faq-by-year .faq-q-block:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+
+.faq-by-year .faq-q-block ul {
+  margin: 0 0 4px;
+  padding-left: 1.2rem;
+}
+
+.faq-by-year .faq-q-block li {
+  margin: 0.2rem 0;
+  line-height: 1.6;
+  color: var(--vp-c-text-1);
+}
+
+/* FAQ：仅外链一行（问题 2–8） */
+.faq-by-year .faq-q-block--linkonly {
+  margin: 0.65rem 0 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.faq-by-year .faq-q-link-line {
+  margin: 0;
+  line-height: 1.65;
+  color: var(--vp-c-text-1);
+}
+
+.faq-by-year .faq-q-link-line a {
+  font-weight: 500;
+}
+
+.faq-by-year .faq-q-manual-ref {
+  margin-left: 0.25rem;
+  font-size: 0.9em;
+  color: var(--vp-c-text-2);
+}
+
+.faq-by-year .faq-q-block--with-body {
+  margin: 1rem 0 1.1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--vp-c-divider);
+}
+
+.faq-by-year .faq-q-body-list {
+  margin: 0.75rem 0 0;
+  padding-left: 1.25rem;
+}
+
+.faq-by-year .faq-q-body-list li {
+  margin: 0.35rem 0;
+  line-height: 1.65;
+  color: var(--vp-c-text-1);
+}
+
+.past-loongson-topics-page > details,
+.faq-by-year > details {
   margin: 0.1rem 0;
   border-radius: 8px;
   padding: 0 12px 0;
   background: var(--vp-c-bg);
 }
 
-.past-loongson-topics-page > details[open] {
+.past-loongson-topics-page > details[open],
+.faq-by-year > details[open] {
   border: 1px solid var(--vp-c-divider);
   padding-bottom: 12px;
 }
 
-.vp-doc .past-loongson-topics-page > details > summary {
+.vp-doc .past-loongson-topics-page > details > summary,
+.vp-doc .faq-by-year > details > summary {
   position: relative;
   margin: 0 -12px;
   padding: 8px 12px 8px 30px; /* 12px 基础 + 18px 箭头 */
@@ -27,15 +103,18 @@
   list-style: none;
 }
 
-.vp-doc .past-loongson-topics-page > details > summary::-webkit-details-marker {
+.vp-doc .past-loongson-topics-page > details > summary::-webkit-details-marker,
+.vp-doc .faq-by-year > details > summary::-webkit-details-marker {
   display: none;
 }
 
-.vp-doc .past-loongson-topics-page > details > summary::marker {
+.vp-doc .past-loongson-topics-page > details > summary::marker,
+.vp-doc .faq-by-year > details > summary::marker {
   content: '';
 }
 
-.vp-doc .past-loongson-topics-page > details > summary::before {
+.vp-doc .past-loongson-topics-page > details > summary::before,
+.vp-doc .faq-by-year > details > summary::before {
   content: '›';
   position: absolute;
   left: 12px;
@@ -48,12 +127,14 @@
   transform-origin: 50% 50%;
 }
 
-.vp-doc .past-loongson-topics-page > details[open] > summary::before {
+.vp-doc .past-loongson-topics-page > details[open] > summary::before,
+.vp-doc .faq-by-year > details[open] > summary::before {
   transform: translateY(-50%) rotate(90deg);
   color: var(--vp-c-brand-1);
 }
 
-.past-loongson-topics-page > details[open] > summary {
+.past-loongson-topics-page > details[open] > summary,
+.faq-by-year > details[open] > summary {
   border-bottom: 1px solid var(--vp-c-divider);
   margin-bottom: 12px;
   background: var(--vp-c-bg-soft);
@@ -119,6 +200,7 @@
   margin-top: 0.15rem;
 }
 
-.dark .past-loongson-topics-page > details[open] > summary {
+.dark .past-loongson-topics-page > details[open] > summary,
+.dark .faq-by-year > details[open] > summary {
   background: var(--vp-c-bg-soft);
 }
